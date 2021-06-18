@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>GALERIA</title>
+        <link rel="stylesheet" href="css/estilos.css"/>
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-storage.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-database.js"></script>
+        <script src="js/init.js"></script>
+    </head>
+    <body> 
+        <div id="container">
+            <header>
+                <h1 class="Titulo">GALERIA ADMIN</h1>
+            </header>
+            <div class="clearfix"></div>
+            <nav>
+                <ul id="menuA" class="menuA">
+   
+                </ul>
+            </nav>
+            <div class="DIVPrin">
+            <div class="divid1">
+                <form id="datos">
+                    <h2>ALTAS</h2>
+                    <p>
+                        Ingresa el nombre
+                        <input type="text" name="NombreSP">
+                    </p>
+                    <p>
+                        Ingresa su info
+                        <input type="text" name="Info">
+                    </p>
+                </form>
+                <section id="content">
+                    <input type="file" value="sub" id="filebut"/>
+    
+                    <button type="button" onclick="subirArchivo()">Subir Informacion</button>
+                </section>
+            </div>
+            <div class="divid2">
+            <form id="modificar">
+                <h2>MODIFICAR</h2>
+                <p>
+                    Ingresa el nombre a modificar
+                    <input type="text" name="NombreOriginal" id="NombreOriginal">
+                </p>
+                <p>
+                    Ingresa su nuevo nombre 
+                    <input type="text" name="NombreNuevo" id="NombreNuevo">
+                </p>
+                <p>
+                    Ingresa su nueva info
+                    <input type="text" name="InfoNueva" id="InfoNueva">
+                </p>
+            </form>
+            <section id="modificarC">
+                    Ingresa el nuevo archivo
+                <input type="file" value="subirA" id="fileNuevo"/>
+                <button type="button" onclick="modificarArchivo()">Subir Nueva info</button>
+            </section>
+            </div>
+            <div class="divid3">
+            <form id="borrar">
+                <h2>BORRAR</h2>
+                <p>
+                    Ingresa el nombre a borrar
+                    <input type="text" name="NombreBorrar">
+                </p>
+                <p>
+                <button type="button" onclick="borrarArchivo()">Borrar Info</button>
+                </p>
+            </form>
+            </section>
+            </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <footer>Copyright &copy; 2021 Angel Val.</footer> 
+        </div>
+        <script src="js/firebaseAuthBase.js"></script>   
+    </body>
+</html>
